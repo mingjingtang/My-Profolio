@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import me from './image/me.jpg'
 import './App.css';
-import { Menu, Segment, Image} from 'semantic-ui-react'
+import { Menu, Segment, Image, Icon} from 'semantic-ui-react'
 
 export default class extends Component {
   state = { activeItem: 'aboutMe' }
@@ -32,7 +32,34 @@ export default class extends Component {
         <Segment attached='bottom'>
           <Image className = "image" 
             src={me} size='medium' 
-            circular />
+            circular 
+          />
+
+          <div className = "social">
+            <Icon 
+              size = "huge"
+              name = "github square"
+            ></Icon>
+
+            <Icon
+              size = "huge"
+              name = "linkedin"
+            >
+            </Icon>
+
+            <Icon 
+              size = "huge"
+              name = "instagram"
+            >
+            </Icon>
+
+
+            
+          </div>
+          
+
+          
+
         </Segment>
       </div>
     );
