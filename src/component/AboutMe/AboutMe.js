@@ -7,15 +7,13 @@ import { Image, Icon } from 'semantic-ui-react'
 
 export default class AboutMe extends React.Component {
     state = {
-        clickedIcon: '',
-        clicked: false
+        clickedIcon: ''
     }
 
 
     handleClick = (e, { name }) => {
         this.setState({
             clickedIcon: name,
-            clicked: true
         })
     }
 
