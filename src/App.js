@@ -17,12 +17,12 @@ export default class extends Component {
     return (
       <div className="App">
         <Menu tabular>
-          <Menu.Item 
+          <Menu.Item className = "menuItem"
             name='aboutMe' 
             active={activeItem === 'aboutMe'} 
             onClick={this.handleItemClick} 
           />
-          <Menu.Item 
+          <Menu.Item className = "menuItem"
             name='myProjects' 
             active={activeItem === 'myProjects'} 
             onClick={this.handleItemClick} 
@@ -30,7 +30,9 @@ export default class extends Component {
         </Menu>
 
         <Segment attached='bottom'>
-          <Image src={me} size='medium' circular />
+          <Image className = "image" 
+            src={me} size='medium' 
+            circular />
         </Segment>
       </div>
     );
