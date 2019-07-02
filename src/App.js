@@ -24,32 +24,30 @@ export default class extends Component {
       <div className="App">
         <Router>
           <div>
-            <Menu>
-              <Link to="/">
-                <Menu.Item className="menuItem"
-                  name='home'
-                  active={activeItem === 'home'}
-                  onClick={this.handleItemClick}
-                />
-              </Link>
+            <Menu className="ui tabular menu">
+              <Menu.Item as={Link} to='/'
+                className="menuItem"
+                name='home'
+                active={activeItem === 'home'}
+                onClick={this.handleItemClick}
+              />
 
-              <Link to="/aboutMe">
-                <Menu.Item className="menuItem"
-                  name='aboutMe'
-                  active={activeItem === 'aboutMe'}
-                  onClick={this.handleItemClick}
-                />
-              </Link>
 
-              <Link to="/myProjects">
-                <Menu.Item className="menuItem"
-                  name='myProjects'
-                  active={activeItem === 'myProjects'}
-                  onClick={this.handleItemClick}
-                />
-              </Link>
+              <Menu.Item as={Link} to='/aboutMe'
+                className="menuItem"
+                name='aboutMe'
+                active={activeItem === 'aboutMe'}
+                onClick={this.handleItemClick}
+              />
+
+
+              <Menu.Item as={Link} to='/myProjects'
+                className="menuItem"
+                name='myProjects'
+                active={activeItem === 'myProjects'}
+                onClick={this.handleItemClick}
+              />
             </Menu>
-
 
 
             <Switch>
