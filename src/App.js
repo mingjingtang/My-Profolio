@@ -1,87 +1,65 @@
 import React, { Component } from 'react'
-
-import me from './image/me.jpg'
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './App.css';
-import { Menu, Segment, Image, Icon} from 'semantic-ui-react'
+import Home from './component/Home/Home'
+import AboutMe from './component/AboutMe/AboutMe'
+import MyProjects from './component/MyProjects/MyProjects'
+import { Menu } from 'semantic-ui-react'
 
 export default class extends Component {
-  state = { 
+  state = {
     activeItem: 'aboutMe',
-    clickedIcon: '',
-    clicked: false
   }
 
-  handleItemClick = (e, { name }) => 
-    this.setState({ 
+  handleItemClick = (e, { name }) =>
+    this.setState({
       activeItem: name,
     }
-  )
-
-  handleClick = (e, {name}) => {
-    this.setState({
-      clickedIcon: name,
-      clicked: true
-    })
-  }
+    )
 
   render() {
     const { activeItem } = this.state
 
     return (
       <div className="App">
-        <Menu tabular>
-          <Menu.Item className = "menuItem"
-            name='aboutMe' 
-            active={activeItem === 'aboutMe'} 
-            onClick={this.handleItemClick} 
-          />
-          <Menu.Item className = "menuItem"
-            name='myProjects' 
-            active={activeItem === 'myProjects'} 
-            onClick={this.handleItemClick} 
-          />
-        </Menu>
+        <Router>
+          <div>
+            <Menu>
+              <Link to="/">
+                <Menu.Item className="menuItem"
+                  name='home'
+                  active={activeItem === 'home'}
+                  onClick={this.handleItemClick}
+                />
+              </Link>
 
-        <Segment attached='bottom'>
-          <Image className = "image" 
-            src={me} size='medium' 
-            circular 
-          />
+              <Link to="/aboutMe">
+                <Menu.Item className="menuItem"
+                  name='aboutMe'
+                  active={activeItem === 'aboutMe'}
+                  onClick={this.handleItemClick}
+                />
+              </Link>
 
-          <div className = "social">
-          <a href="https://github.com/mingjingtang"> 
-            <Icon 
-              size = "huge"
-              name = "github square"
-              onClick={this.handleClick}
-            ></Icon>
-          </a>
+              <Link to="/myProjects">
+                <Menu.Item className="menuItem"
+                  name='myProjects'
+                  active={activeItem === 'myProjects'}
+                  onClick={this.handleItemClick}
+                />
+              </Link>
+            </Menu>
 
-          <a href="https://www.linkedin.com/in/mingjing/">
-            <Icon
-              size = "huge"
-              name = "linkedin"
-              onClick={this.handleClick}
-            >
-            </Icon>
-          </a>
 
-          <a href="https://www.instagram.com/mingjingtang/">
-            <Icon 
-              size = "huge"
-              name = "instagram"
-              onClick={this.handleClick}
-            >
-            </Icon>
-          </a>
 
-            
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/aboutMe" component={AboutMe} />
+              <Route path="/myProjects" component={MyProjects} />
+            </Switch>
+
           </div>
-          
-
-          
-
-        </Segment>
+        </Router>
       </div>
     );
   }
