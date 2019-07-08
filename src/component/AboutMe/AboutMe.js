@@ -22,31 +22,31 @@ export default class AboutMe extends React.Component {
         return (
             <div className="aboutMe">
                 <Image className="image"
-                    src={me} size='medium'
+                    src={me} size='small'
                     circular
                 />
 
                 <div className="social">
-                    <a href="https://github.com/mingjingtang">
+                    <a href="https://github.com/mingjingtang" target = "_blank">
                         <Icon
-                            size="huge"
+                            size="large"
                             name="github square"
                             onClick={this.handleClick}
                         ></Icon>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/mingjing/">
+                    <a href="https://www.linkedin.com/in/mingjing/" target = "_blank">
                         <Icon
-                            size="huge"
+                            size="large"
                             name="linkedin"
                             onClick={this.handleClick}
                         >
                         </Icon>
                     </a>
 
-                    <a href="https://www.instagram.com/mingjingtang/">
+                    <a href="https://www.instagram.com/mingjingtang/" target = "_blank">
                         <Icon
-                            size="huge"
+                            size="large"
                             name="instagram"
                             onClick={this.handleClick}
                         >

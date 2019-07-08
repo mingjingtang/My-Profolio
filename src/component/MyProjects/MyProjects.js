@@ -5,7 +5,7 @@ class MyProjects extends React.Component {
   render() {
     return (
       <div className = "projectList">
-        <h1>My Projects</h1>
+        <h3>My Projects</h3>
         <List divided relaxed>
           <List.Item>
             <List.Icon name='github' size='large' verticalAlign='middle' />
