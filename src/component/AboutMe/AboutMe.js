@@ -2,7 +2,7 @@ import React from 'react'
 import me from '../../image/me.jpg'
 
 import '../AboutMe/AboutMe.css'
-import { Image, Icon, Header, Card } from 'semantic-ui-react'
+import { Image, Icon, Header, Card, Divider, Segment } from 'semantic-ui-react'
 
 
 export default class AboutMe extends React.Component {
@@ -58,33 +58,32 @@ export default class AboutMe extends React.Component {
                     <div className="contactDetail">
                         <Header as='h4' color='grey' className="header">
                             ADDRESS
-                    <div class="item"></div>
+                        <div class="item"></div>
                             6020 Fresh Pond Rd
                             Maspeth, NY, 11378
-                </Header>
+                        </Header>
                     </div>
 
                     <div className="contactDetail">
                         <Header as='h4' color='grey'>
                             PHONE
-                    <div class="item"></div>
+                        <div class="item"></div>
                             (917)690-2262
-        
-                </Header>
+                        </Header>
                     </div>
 
                     <div className="contactDetail">
                         <Header as='h4' color="grey">
                             EMAIL
-                    <div class="item"></div>
+                        <div class="item"></div>
                             tmjcsh@gmail.com
-                </Header>
+                        </Header>
                     </div>
-
                 </div>
 
 
-                <Card className="card"
+                <div className="card">
+                <Card 
                     link
                     header='Mingjing Tang'
                     meta='Software Engineer / Front End Developer'
@@ -92,6 +91,8 @@ export default class AboutMe extends React.Component {
                         'Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Collaborating with different kinds of customers to gather requirements, produce plans and improve designs for usability and functionality. Fully proficient in JavaScript, HTML and React.',
                     ].join('')}
                 />
+
+                </div>  
             </div>
         )
     }

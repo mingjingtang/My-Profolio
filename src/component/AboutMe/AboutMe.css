@@ -14,8 +14,14 @@
 
 .contactInfo{
     display: flex;
+    justify-content: center; 
 }
 
 .contactDetail{
     padding: 3em;
+}
+
+.card{
+    display: flex;
+    justify-content: center; 
 }
