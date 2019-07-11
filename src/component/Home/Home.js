@@ -19,8 +19,8 @@ class Home extends React.Component {
             <a href="mailto:tmjcsh@gmail.com" target="_blank">Mail to me</a>
           </div>
           <div>
-            <a href="https://drive.google.com/open?id=1eWs7GWEgaNOnj1lWUOB_QWJZluGGXept" 
-            target="_blank">See my resume</a>
+            <a href="https://bit.ly/2XIdl1J" 
+            target="_blank">Resume</a>
           </div>
         </div>
 
