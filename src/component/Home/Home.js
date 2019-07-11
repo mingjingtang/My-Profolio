@@ -1,14 +1,30 @@
 import React from 'react'
 import '../Home/Home.css'
+import { Divider} from 'semantic-ui-react'
 
 class Home extends React.Component {
   render() {
     return (
-        <div>
-        <h2>
-          home page
+      <div>
+        <div className="intro">
+          <h2>
+            Know more about me
         </h2>
         </div>
+
+        <Divider section className="divider" />
+
+        <div className="contactInfo">
+          <div>
+            <a href="mailto:tmjcsh@gmail.com" target="_blank">Mail to me</a>
+          </div>
+          <div>
+            <a href="https://drive.google.com/file/d/1Us6MLR37_Phrbk1A0sIyvbS-byxTYXKR/view?usp=sharing" 
+            target="_blank">See my resume</a>
+          </div>
+        </div>
+
+      </div>
     )
   }
 }

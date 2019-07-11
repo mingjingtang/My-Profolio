@@ -2,7 +2,7 @@ import React from 'react'
 import me from '../../image/me.jpg'
 
 import '../AboutMe/AboutMe.css'
-import { Image, Icon, Header, Card, Divider, Segment } from 'semantic-ui-react'
+import { Image, Icon} from 'semantic-ui-react'
 
 
 export default class AboutMe extends React.Component {
