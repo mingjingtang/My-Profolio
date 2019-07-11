@@ -9,7 +9,7 @@ class MyProjects extends React.Component {
           <List.Item className = "listItem">
             <List.Icon name='github' size='large' verticalAlign='middle' />
             <List.Content>
-              <List.Header className = "listHeader" as='a' href="https://github.com/mingjingtang/Word-Search" target = "_blank">Word Search</List.Header>
+              <List.Header className = "listHeader" as='a' href="https://mingjingtang.github.io/Word-Search/login.html" target = "_blank">Word Search</List.Header>
               <List.Description as='a'>A word search game which have two missions. Once you find all the words in the first mission,
               you can go to second mission.</List.Description>
             </List.Content>
