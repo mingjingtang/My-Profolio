@@ -1,6 +1,15 @@
 .projectList{
-    width: 60em;
+    width: 80em;
     margin: auto;
     text-align: center;
+    margin-top: 10em;
 }
 
+.listItem{
+    margin-bottom: 1em;
+}
+
+.listHeader{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
