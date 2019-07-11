@@ -54,45 +54,28 @@ export default class AboutMe extends React.Component {
                     </a>
                 </div>
 
-                <div className="contactInfo">
-                    <div className="contactDetail">
-                        <Header as='h4' color='grey' className="header">
-                            ADDRESS
-                        <div class="item"></div>
-                            6020 Fresh Pond Rd
-                            Maspeth, NY, 11378
-                        </Header>
-                    </div>
-
-                    <div className="contactDetail">
-                        <Header as='h4' color='grey'>
-                            PHONE
-                        <div class="item"></div>
-                            (917)690-2262
-                        </Header>
-                    </div>
-
-                    <div className="contactDetail">
-                        <Header as='h4' color="grey">
-                            EMAIL
-                        <div class="item"></div>
-                            tmjcsh@gmail.com
-                        </Header>
-                    </div>
-                </div>
-
 
                 <div className="card">
-                <Card 
-                    link
-                    header='Mingjing Tang'
-                    meta='Software Engineer / Front End Developer'
-                    description={[
-                        'Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Collaborating with different kinds of customers to gather requirements, produce plans and improve designs for usability and functionality. Fully proficient in JavaScript, HTML and React.',
-                    ].join('')}
-                />
+                    <p>
+                    <b>
+                        Mingjing Tang - 
+                    </b>
+                        Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Collaborating with different kinds of customers to gather requirements, produce plans and improve designs for usability and functionality. Fully proficient in JavaScript, HTML and React.
+                    </p>
+                    <p>
+                        <b>
+                            Skills - 
+                        </b>
+                        JavaScript, java, HTML,CSS, React, Ruby on Rails, MySQL, Git, Android development, Selenium WebDriver
+                    </p>
+                    <p>
+                        <b>
+                        Interest -
+                        </b>
+                        Reading, gym, travel
+                    </p>
 
-                </div>  
+                </div>
             </div>
         )
     }
