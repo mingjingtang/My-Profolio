@@ -19,7 +19,7 @@ class Home extends React.Component {
             <a href="mailto:tmjcsh@gmail.com" target="_blank">Mail to me</a>
           </div>
           <div>
-            <a href="https://drive.google.com/file/d/1Us6MLR37_Phrbk1A0sIyvbS-byxTYXKR/view?usp=sharing" 
+            <a href="https://drive.google.com/open?id=1eWs7GWEgaNOnj1lWUOB_QWJZluGGXept" 
             target="_blank">See my resume</a>
           </div>
         </div>
