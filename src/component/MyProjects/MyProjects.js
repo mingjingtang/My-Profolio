@@ -18,7 +18,7 @@ class MyProjects extends React.Component {
           <List.Item className = "listItem">
             <List.Icon name='github' size='large' verticalAlign='middle' />
             <List.Content>
-              <List.Header className = "listHeader" as='a' href="https://github.com/mingjingtang/book-club" target = "_blank">Book Club</List.Header>
+              <List.Header className = "listHeader" as='a' href="https://book-club-sei-ga.herokuapp.com/" target = "_blank">Book Club</List.Header>
               <List.Description as='a'>Use GoodReads API, search any book by book title. Add and delete any book you like or dislike.</List.Description>
             </List.Content>
           </List.Item>
