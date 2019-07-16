@@ -20,7 +20,6 @@ class MyProjects extends React.Component {
             <List.Content>
               <List.Header className = "listHeader" as='a' href="https://book-club-sei-ga.herokuapp.com/" target = "_blank">Book Club</List.Header>
               <List.Description as='a'>Use GoodReads API, search any book by book title. Add and delete any book you like or dislike.</List.Description>
-              <List.Description as='a'>* This APP need browser to add an extension - Moesif Orign & CORS Changer.</List.Description>
             </List.Content>
           </List.Item>
 
