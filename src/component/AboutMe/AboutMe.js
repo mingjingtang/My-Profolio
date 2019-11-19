@@ -4,6 +4,9 @@ import me from '../../image/me.jpg'
 import '../AboutMe/AboutMe.css'
 import { Image, Icon} from 'semantic-ui-react'
 
+import Typist from 'react-typist';
+
+
 
 export default class AboutMe extends React.Component {
     state = {
@@ -48,9 +51,11 @@ export default class AboutMe extends React.Component {
 
                 <div className="card">
                     <p>
-                    <b>
-                        Mingjing Tang - 
-                    </b>
+                        <Typist>
+                        <b>
+                            Mingjing Tang - 
+                        </b>
+                        </Typist>
                         Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Collaborating with different kinds of customers to gather requirements, produce plans and improve designs for usability and functionality. Fully proficient in JavaScript, HTML and React.
                     </p>
                     <p>
