@@ -29,25 +29,16 @@ export default class AboutMe extends React.Component {
                 <div className="social">
                     <a href="https://github.com/mingjingtang" target="_blank">
                         <Icon
-                            size="large"
+                            size="big"
                             name="github square"
                             onClick={this.handleClick}
                         ></Icon>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/mingjing/" target="_blank">
+                    <a href="https://www.linkedin.com/in/mingjingtang/" target="_blank">
                         <Icon
-                            size="large"
+                            size="big"
                             name="linkedin"
-                            onClick={this.handleClick}
-                        >
-                        </Icon>
-                    </a>
-
-                    <a href="https://www.instagram.com/mingjingtang/" target="_blank">
-                        <Icon
-                            size="large"
-                            name="instagram"
                             onClick={this.handleClick}
                         >
                         </Icon>

@@ -8,7 +8,7 @@ import { Menu } from 'semantic-ui-react'
 
 export default class extends Component {
   state = {
-    activeItem: 'aboutMe',
+    activeItem: 'home',
   }
 
   handleItemClick = (e, { name }) =>
