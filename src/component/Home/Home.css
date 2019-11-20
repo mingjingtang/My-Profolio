@@ -1,7 +1,14 @@
-.intro{
-    margin-top: 10em;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 600px;
+    margin: 0 auto;
 }
 
+.container #contact{
+    align-self: left;
+}
 
 .divider{
     width: 30em;
@@ -11,3 +18,4 @@
 .contactInfo{
     display: inline;
 }
+

@@ -21,3 +21,13 @@
     justify-content: center; 
     margin-top: 10em;
 }
+
+.large.text {
+    font-size: 2rem;
+    
+    /* margin-bottom: 3em; */
+ }
+
+.name{
+    padding-bottom: 1em;
+}

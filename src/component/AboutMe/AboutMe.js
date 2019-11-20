@@ -1,10 +1,7 @@
 import React from "react";
 import me from "../../image/me.jpg";
-
 import "../AboutMe/AboutMe.css";
 import { Image, Icon } from "semantic-ui-react";
-
-import Typist from "react-typist";
 import Typewriter from "typewriter-effect";
 
 export default class AboutMe extends React.Component {
@@ -38,41 +35,39 @@ export default class AboutMe extends React.Component {
         </div>
 
         <div className="card">
-          <p>
-            <Typewriter
-              options={{
-                strings: ["Mingjing Tang"],
-                autoStart: true,
-                loop: true
-              }}
-              onInit={typewriter => {
-                typewriter
-                  .typeString("Mingjing Tang")
-                  .callFunction(() => {
-                    console.log("String typed out!");
-                  })
-                  .pauseFor(2500)
-                  .deleteAll()
-                  .callFunction(() => {
-                    console.log("All strings were deleted");
-                  })
-                  .start();
-              }}
-            />
-            Knowledgeable Front End Developer adept at creating successful
-            websites that meet customer needs. Collaborating with different
-            kinds of customers to gather requirements, produce plans and improve
-            designs for usability and functionality. Fully proficient in
-            JavaScript, HTML and React.
+          <p className="name">
+            <b className="large text">
+              <Typewriter
+                options={{
+                  strings: ["Mingjing Tang", "Full Stack Developer"],
+                  autoStart: true
+                }}
+                onInit={typewriter => {
+                  typewriter
+                    .typeString("Mingjing Tang | Full Stack Developer")
+                    .callFunction(() => {
+                      console.log("String typed out!");
+                    })
+                    .start();
+                }}
+              />
+            </b>
+          </p>
+        <p>
+            Grateful for creating successful
+            applications that meet customer needs. Believed that collaborate
+            with others is the best way to solve complex problems, also enjoy
+            the processes of independent thinking when lack of supervising. Keep
+            exploring new technologies from any reachable platform.
           </p>
           <p>
-            <b>Skills -</b>
-            JavaScript, java, HTML,CSS, React, Ruby on Rails, MySQL, Git,
+            <b>Skills - </b>
+            Java, JavaScript, HTML, CSS, React, Ruby on Rails, MySQL, Git, Spring Boot,
             Android development, Selenium WebDriver
           </p>
           <p>
-            <b>Interest -</b>
-            Reading, gym, travel
+            <b>Interest - </b>
+            Reading, exercise, travel
           </p>
         </div>
       </div>
