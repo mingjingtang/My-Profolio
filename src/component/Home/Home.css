@@ -19,3 +19,7 @@
     display: inline;
 }
 
+#contact {
+    position: absolute;
+    top: 302px;
+}
