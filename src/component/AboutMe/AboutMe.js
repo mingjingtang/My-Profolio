@@ -54,11 +54,7 @@ export default class AboutMe extends React.Component {
             </b>
           </p>
         <p className="pitch">
-            Grateful for creating successful
-            applications that meet customer needs. Believed that collaborate
-            with others is the best way to solve complex problems, also enjoy
-            the processes of independent thinking when lack of supervising. Keep
-            exploring new technologies from any reachable platform.
+            Full-Stack Developer with 2 years of Front-End Experience. Marketing background always helps me to understand what marketing team or user wants to deliver, by applying the software development skills, I am seeking the best solution to solve the problems. Passionate on collaborating with others to solve complex problems and drive analytic project end to end. I enjoy exploring new technologies and different platforms, as I believe learning continuously always brings more solutions and best results. 
           </p>
           <p className="pitch">
             <b>Skills - </b>

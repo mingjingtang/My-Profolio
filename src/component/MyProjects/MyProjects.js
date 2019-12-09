@@ -12,14 +12,24 @@ class MyProjects extends React.Component {
           <List.Item className="listItem">
             {/* <List.Icon name='github' size='large' verticalAlign='middle' /> */}
             <List.Content>
+            <div className="title">
               <List.Header
-                className="listHeader"
-                as="a"
-                href="https://mingjingtang.github.io/Word-Search/login.html"
-                target="_blank"
-              >
-                Word Search
-              </List.Header>
+                  className="listHeader"
+                  as="a"
+                  href="https://mingjingtang.github.io/Word-Search/login.html"
+                  target="_blank"
+                >
+                  Word Search
+                </List.Header>
+                {/* <List.Header
+                  className="listHeader"
+                  as="a"
+                  href="https://mingjingtang.github.io/Word-Search/login.html"
+                  target="_blank">
+                  Github
+                </List.Header> */}
+            </div>
+              
               <img src={project1} style={{ height: "30%", width: "40%" }} />
               <List.Description as="a">
                 <ul>
@@ -39,6 +49,16 @@ class MyProjects extends React.Component {
           <List.Item className="listItem">
             {/* <List.Icon name='github' size='large' verticalAlign='middle' /> */}
             <List.Content>
+            <div className="title">
+            <List.Header
+                className="listHeader"
+                as="a"
+                href="https://book-club-sei-ga.herokuapp.com/"
+                target="_blank"
+              >
+                Book Club
+              </List.Header>
+            </div>
               <List.Header
                 className="listHeader"
                 as="a"

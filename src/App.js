@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './App.css';
-import Home from './component/Home/Home'
-import AboutMe from './component/AboutMe/AboutMe'
+import ContactMe from './component/Home/Home'
+import Home from './component/AboutMe/AboutMe'
 import MyProjects from './component/MyProjects/MyProjects'
 import { Menu } from 'semantic-ui-react'
 
@@ -51,7 +51,7 @@ export default class extends Component {
 
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/aboutMe" component={AboutMe} />
+              <Route path="/contactMe" component={ContactMe} />
               <Route path="/myProjects" component={MyProjects} />
             </Switch>
 

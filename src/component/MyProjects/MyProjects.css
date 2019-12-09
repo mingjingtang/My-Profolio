@@ -16,5 +16,13 @@
     font-size: 1.3em;
 }
 
+.title{
+    display: flex;
+}
+
+.listHeader{
+    padding-right: 1.5em;
+}
+
 
 
