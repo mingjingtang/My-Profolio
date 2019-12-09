@@ -53,19 +53,19 @@ export default class AboutMe extends React.Component {
               />
             </b>
           </p>
-        <p>
+        <p className="pitch">
             Grateful for creating successful
             applications that meet customer needs. Believed that collaborate
             with others is the best way to solve complex problems, also enjoy
             the processes of independent thinking when lack of supervising. Keep
             exploring new technologies from any reachable platform.
           </p>
-          <p>
+          <p className="pitch">
             <b>Skills - </b>
             Java, JavaScript, HTML, CSS, React, Ruby on Rails, MySQL, Git, Spring Boot,
             Android development, Selenium WebDriver
           </p>
-          <p>
+          <p className="pitch">
             <b>Interest - </b>
             Reading, exercise, travel
           </p>

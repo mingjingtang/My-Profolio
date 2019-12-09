@@ -17,9 +17,20 @@
 
 .contactInfo{
     display: inline;
+    font-size: 1.2em !important;
 }
 
 #contact {
     position: absolute;
     top: 302px;
 }
+
+.pitch{
+    font-size: 1.2em;
+}
+
+.h2{
+    font-size: 2.2em;
+}
+
+

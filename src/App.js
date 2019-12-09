@@ -32,11 +32,10 @@ export default class extends Component {
                 onClick={this.handleItemClick}
               />
 
-
-              <Menu.Item as={Link} to='/aboutMe'
+              <Menu.Item as={Link} to='/contactMe'
                 className="menuItem"
-                name='aboutMe'
-                active={activeItem === 'aboutMe'}
+                name='contactMe'
+                active={activeItem === 'contactMe'}
                 onClick={this.handleItemClick}
               />
 

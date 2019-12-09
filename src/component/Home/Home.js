@@ -12,8 +12,8 @@ class Home extends React.Component {
         </div>
 
         <div id="contact">
-          <div className="intro">
-            <h2>Know more about me</h2>
+          <div className="intro"> 
+            <h2 className="h2">Know more about me</h2>
           </div>
 
           <Divider section className="divider" />
