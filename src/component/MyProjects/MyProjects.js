@@ -3,7 +3,6 @@ import "../MyProjects/MyProjects.css";
 import { Container, List } from "semantic-ui-react";
 import project0 from "../../image/project0.png";
 import project1 from "../../image/project1.png";
-import project1_1 from "../../image/project1_1.png";
 import project2 from "../../image/project2.png";
 import project3 from "../../image/project3.png";
 class MyProjects extends React.Component {
