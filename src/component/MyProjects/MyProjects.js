@@ -1,16 +1,96 @@
 import React from "react";
 import "../MyProjects/MyProjects.css";
-import { List } from "semantic-ui-react";
+import { Container, List } from "semantic-ui-react";
+import project0 from "../../image/project0.png";
 import project1 from "../../image/project1.png";
+import project1_1 from "../../image/project1_1.png";
 import project2 from "../../image/project2.png";
 import project3 from "../../image/project3.png";
 class MyProjects extends React.Component {
   render() {
     return (
-      <div className="projectList">
-        <List divided relaxed>
+      <Container>
+        <List divided verticalAlign="middle">
           <List.Item className="listItem">
-            {/* <List.Icon name='github' size='large' verticalAlign='middle' /> */}
+            <List.Content>
+              <div className="title">
+                <List.Header
+                  className="listHeader"
+                  as="a"
+                  href="https://iex-stock.herokuapp.com/"
+                  target="_blank"
+                >
+                  Stock
+                </List.Header>
+              </div>
+
+              <img
+                src={project0}
+                style={{ height: "30%", width: "40%" }}
+                alt="projectZeroImage"
+              />
+              <List.Description as="a">
+                <ul>
+                  <li>
+                    Web-based stock app with up-to-date pricing information
+                    reflecting performance of stocks
+                  </li>
+                  <li>
+                    Ensure secure user authentication, a registered user can buy
+                    any share of the stock based on balance.
+                  </li>
+                  <li>
+                    Utilized the IEX API to ensure real-time stock information.
+                  </li>
+                </ul>
+              </List.Description>
+            </List.Content>
+          </List.Item>
+
+          <List.Item className="listItem">
+            <List.Content>
+              <div className="title">
+                <List.Header
+                  className="listHeader"
+                  as="a"
+                  href="https://github.com/mingjingtang/postit2"
+                  target="_blank"
+                >
+                  PostIt
+                </List.Header>
+              </div>
+
+              <img
+                src={project1}
+                style={{ height: "30%", width: "40%" }}
+                alt="projectOneImage"
+              />
+              <List.Description as="a">
+                <ul>
+                  <li>
+                    Built a Reddit-like application with SpringBoot and React.
+                  </li>
+                  <li>
+                    Stored data in PostgreSQL database, which could be queried
+                    and manipulated with different user roles.
+                  </li>
+                  <li>
+                    Authenticate by JWT token, registered user can login, create
+                    posts and leave comments, all users can view others’ posts.
+                  </li>
+                  <li>
+                    More than 85%+ back-end code covered by Mockito unit tests,
+                    which had been integrated with Jenkins jobs.
+                  </li>
+                  <li>
+                    ELK Stack had been integrated for logging and monitoring.
+                  </li>
+                </ul>
+              </List.Description>
+            </List.Content>
+          </List.Item>
+
+          {/* <List.Item className="listItem">
             <List.Content>
               <div className="title">
                 <List.Header
@@ -21,16 +101,13 @@ class MyProjects extends React.Component {
                 >
                   Word Search
                 </List.Header>
-                {/* <List.Header
-                  className="listHeader"
-                  as="a"
-                  href="https://mingjingtang.github.io/Word-Search/login.html"
-                  target="_blank">
-                  Github
-                </List.Header> */}
               </div>
 
-              <img src={project1} style={{ height: "30%", width: "40%" }} />
+              <img
+                src={project1_1}
+                style={{ height: "30%", width: "40%" }}
+                alt="projectOneOneImage"
+              />
               <List.Description as="a">
                 <ul>
                   <li>A word search game which have two missions.</li>
@@ -44,10 +121,9 @@ class MyProjects extends React.Component {
                 </ul>
               </List.Description>
             </List.Content>
-          </List.Item>
+          </List.Item> */}
 
           <List.Item className="listItem">
-            {/* <List.Icon name='github' size='large' verticalAlign='middle' /> */}
             <List.Content>
               <div className="title"></div>
               <List.Header
@@ -58,7 +134,11 @@ class MyProjects extends React.Component {
               >
                 Book Club
               </List.Header>
-              <img src={project2} style={{ height: "30%", width: "50%" }} />
+              <img
+                src={project2}
+                style={{ height: "30%", width: "50%" }}
+                alt="projectTwoImage"
+              />
               <List.Description as="a">
                 <ul>
                   <li>
@@ -78,7 +158,6 @@ class MyProjects extends React.Component {
           </List.Item>
 
           <List.Item className="listItem">
-            {/* <List.Icon name='github' size='large' verticalAlign='middle' /> */}
             <List.Content>
               <List.Header
                 className="listHeader"
@@ -88,7 +167,11 @@ class MyProjects extends React.Component {
               >
                 Trip Plan
               </List.Header>
-              <img src={project3} style={{ height: "20%", width: "50%" }} />
+              <img
+                src={project3}
+                style={{ height: "20%", width: "50%" }}
+                alt="projectThreeImage"
+              />
               <List.Description as="a">
                 <ul>
                   <li>
@@ -102,14 +185,14 @@ class MyProjects extends React.Component {
                     mind.
                   </li>
                   <li>
-                    Technology used: <b>Ruby on Rails, MySQL</b>
+                    Technology used: <b>Ruby on Rails, Express.js, MySQL</b>
                   </li>
                 </ul>
               </List.Description>
             </List.Content>
           </List.Item>
         </List>
-      </div>
+      </Container>
     );
   }
 }

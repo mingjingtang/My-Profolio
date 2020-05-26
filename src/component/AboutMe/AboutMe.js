@@ -1,72 +1,89 @@
 import React from "react";
-import me from "../../image/me.jpg";
+import MyPhoto from "../../image/me.jpg";
 import "../AboutMe/AboutMe.css";
-import { Image, Icon } from "semantic-ui-react";
+import { Container, Image, Icon, Segment } from "semantic-ui-react";
 import Typewriter from "typewriter-effect";
 
 export default class AboutMe extends React.Component {
   state = {
-    clickedIcon: ""
+    clickedIcon: "",
   };
 
   handleClick = (e, { name }) => {
     this.setState({
-      clickedIcon: name
+      clickedIcon: name,
     });
   };
 
   render() {
     return (
-      <div className="aboutMe">
-        <Image className="image" src={me} size="small" circular />
-
+      <Container className="ui two column centered grid">
         <div className="social">
-          <a href="https://github.com/mingjingtang" target="_blank">
-            <Icon
-              size="big"
-              name="github square"
-              onClick={this.handleClick}
-            ></Icon>
-          </a>
+          <Image className="image" src={MyPhoto} size="small" circular />
 
-          <a href="https://www.linkedin.com/in/mingjingtang/" target="_blank">
-            <Icon size="big" name="linkedin" onClick={this.handleClick}></Icon>
-          </a>
+          <div className="socialIcon">
+            <a
+              href="https://github.com/mingjingtang"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                size="big"
+                name="github square"
+                onClick={this.handleClick}
+              ></Icon>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mingjingtang/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                size="big"
+                name="linkedin"
+                onClick={this.handleClick}
+              ></Icon>
+            </a>
+          </div>
         </div>
 
-        <div className="card">
-          <p className="name">
-            <b className="large text">
-              <Typewriter
-                options={{
-                  strings: ["Mingjing Tang", "Full Stack Developer"],
-                  autoStart: true
-                }}
-                onInit={typewriter => {
-                  typewriter
-                    .typeString("Mingjing Tang | Full Stack Developer")
-                    .callFunction(() => {
-                      console.log("String typed out!");
-                    })
-                    .start();
-                }}
-              />
-            </b>
-          </p>
-        <p className="pitch">
-            Full-Stack Developer with 2 years of Front-End Experience. Marketing background always helps me to understand what marketing team or user wants to deliver, by applying the software development skills, I am seeking the best solution to solve the problems. Passionate on collaborating with others to solve complex problems and drive analytic project end to end. I enjoy exploring new technologies and different platforms, as I believe learning continuously always brings more solutions and best results. 
+        <Segment basic>
+          <div className="typeWriter">
+            <Typewriter
+              options={{
+                strings: ["Mingjing Tang", "Software Engineer"],
+                autoStart: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Mingjing Tang | Software Engineer")
+                  .start();
+              }}
+            />
+          </div>
+
+          <p className="pitch">
+            Innovative software Engineer with over 2 years of experience in full
+            software development lifecycle. Designed, developed, and maintained
+            a B2B site for a startup company. Built multiple full-stack projects
+            with authentication, database and interactive front end.
           </p>
           <p className="pitch">
-            <b>Skills - </b>
-            Java, JavaScript, HTML, CSS, React, Ruby on Rails, MySQL, Git, Spring Boot,
-            Android development, Selenium WebDriver
+            <b>Languages &ndash; </b>
+            Java, JavaScript, PostgreSQL, MySQL, Bash Script
           </p>
           <p className="pitch">
-            <b>Interest - </b>
-            Reading, exercise, travel
+            <b>Web Technologies &ndash; </b>
+            HTML, CSS, React, Ruby on Rails, Node.js, Express.js
           </p>
-        </div>
-      </div>
+          <p className="pitch">
+            <b>Tools &ndash; </b>
+            Git, IntelliJ IDEA, Visual Studio Code, SpringBoot, Jenkins, ELK
+            Stack, RabbitMQ, Docker, Mockito
+          </p>
+        </Segment>
+      </Container>
     );
   }
 }

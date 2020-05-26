@@ -1,0 +1,20 @@
+.contactInfo {
+  position: absolute;
+  margin-top: 25%;
+}
+
+.contentTitle {
+  font-size: 1.7rem;
+}
+
+.contentLink {
+  font-size: 1.2rem;
+}
+
+.responsive {
+  width: 72%;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 11%;
+  margin-left: 35%;
+}
