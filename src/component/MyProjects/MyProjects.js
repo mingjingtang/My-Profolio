@@ -1,6 +1,5 @@
 import React from "react";
 import "../MyProjects/MyProjects.css";
-import { Container, Item } from "semantic-ui-react";
 import Project from "../Project/Project";
 import stock from "../../image/stockImage.png";
 import postIt from "../../image/postItImage.png";
@@ -15,7 +14,7 @@ let objects = [
     githubLink: "https://github.com/mingjingtang/Stock",
     image: stock,
     info:
-      "Web-based stock app with up-to-date pricing information reflecting performance of stocks.Ensure secure user authentication, a registered user can buy any share of the stock based on balance.Utilized the IEX API to ensure real-time stock information.Technology used: JavaScript, React, Node.js, IEX API, PostgreSQL.",
+      "Web-based stock app with up-to-date pricing information reflecting performance of stocks#Ensure secure user authentication, a registered user can buy any share of the stock based on balance#Utilized the IEX API to ensure real-time stock information#Technology used: JavaScript, React, Node.js, IEX API, PostgreSQL",
   },
   {
     title: "PostIt",
@@ -23,7 +22,7 @@ let objects = [
     githubLink: "https://github.com/mingjingtang/postit2",
     image: postIt,
     info:
-      "Built a Reddit-like application with SpringBoot and React.Stored data in PostgreSQL database, which could be queried and manipulated with different user roles.Authenticate by JWT token, registered user can login, create posts and leave comments, all users can view others’ posts.More than 85%+ back-end code covered by Mockito unit tests, which had been integrated with Jenkins jobs.ELK Stack had been integrated for logging and monitoring.Technology used: Java, JavaScript, React, Mockito, Junit, Jenkins, ELK Stack, Docker, PostgreSQL.",
+      "Built a Reddit-like application with SpringBoot and React#Stored data in PostgreSQL database, which could be queried and manipulated with different user roles#Authenticate by JWT token, registered user can login, create posts and leave comments, all users can view others’ posts#More than 85%+ back-end code covered by Mockito unit tests, which had been integrated with Jenkins jobs#ELK Stack had been integrated for logging and monitoring#Technology used: Java, JavaScript, React, Mockito, Junit, Jenkins, ELK Stack, Docker, PostgreSQL",
   },
   {
     title: "Word Search",
@@ -31,7 +30,7 @@ let objects = [
     githubLink: "https://github.com/mingjingtang/Word-Search",
     image: wordSearch,
     info:
-      "A word search game developed base on serials of algorithm which to know if the user inputs the right word or not.Once user find all the words the first mission, they could go to the next one.Technology used: Algorithm, JavaScript, CSS, HTML.",
+      "A word search game developed with algorithms that can identify if the user inputs the right word or not#Once users find all the words in the mission, they could go to the next one#The technology used: Algorithm, JavaScript, CSS, HTML",
   },
   {
     title: "Book Club",
@@ -39,7 +38,7 @@ let objects = [
     githubLink: "https://github.com/mingjingtang/book-club",
     image: bookClub,
     info:
-      "By using GoodReads API, given a integrate database. User can search any book by book title.User can add any book they like to their favoriate list, or remote them from it.Technology used:JavaScript, React, Node, GoodReads API.",
+      "By using GoodReads API, the application gave an integrated database#Users can search for any book by book title or author#Users can add any book they like to their favorite list, or remove them from it#The technology used: JavaScript, React, Node.js, GoodReads API.",
   },
   {
     title: "Trip Plan",
@@ -47,7 +46,7 @@ let objects = [
     githubLink: "https://github.com/mingjingtang/Trip-Plan",
     image: tripPlan,
     info:
-      "Created all the places that user can visit in the database, and user can create their own trip by select different places.User can ddd any places they want into a specific trip, or delete any places from a specific trip if they changed their mind.Technology used: React, Ruby on Rails, PostgreSQL.",
+      "Created all the places information that users can visit in the database#Users can create their own trips by select different places#Users can add any places they want into a specific trip, or delete any places from a specific trip if they changed their mind#The technology used: React, Ruby on Rails, PostgreSQL.",
   },
 ];
 
@@ -61,9 +60,10 @@ class MyProjects extends React.Component {
   };
 
   render() {
-    const project = objects.map((item) => {
+    const project = objects.map((item, index) => {
       return (
         <Project
+          key={index}
           title={item.title}
           herokuLink={item.herokuLink}
           githubLink={item.githubLink}
@@ -73,7 +73,11 @@ class MyProjects extends React.Component {
       );
     });
 
-    return <Container style={{ marginTop: "4vh" }}>{project}</Container>;
+    return (
+      <main>
+        <div>{project}</div>
+      </main>
+    );
   }
 }
 export default MyProjects;

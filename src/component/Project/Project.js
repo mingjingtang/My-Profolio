@@ -1,65 +1,68 @@
 import React from "react";
 import "./Project.css";
-import { Image, Button, Divider } from "semantic-ui-react";
+import { Image, Button, Grid, Divider } from "semantic-ui-react";
 
 export default class Project extends React.Component {
   render() {
     const { title, herokuLink, githubLink, image, info } = this.props;
 
+    const listItem = info.split("#");
+
+    const lists = listItem.map((item, index) => {
+      if (index === listItem.length - 1) {
+        return (
+          <li>
+            <b>{item}</b>
+          </li>
+        );
+      } else {
+        return (
+          <li>
+            <p>{item}</p>
+          </li>
+        );
+      }
+    });
+
     return (
-      <div className="sectionArea">
-        <div className="titleArea">
-          <div className="titleItem">
-            <h2 color="blue" style={{ margin: "auto", textAlign: "center" }}>
-              {title}
-            </h2>
-          </div>
-          <div className="titleItem">
-            <Button
-              size="mini"
-              icon="world"
-              primary
-              href={herokuLink}
-              target="blank"
-            />
-          </div>
+      <>
+        <Grid centered stackable columns={2} style={{ marginTop: "3vh" }}>
+          <Grid.Column width={4}>
+            <Image src={image} size="huge" alt="projectZeroImage" />
+          </Grid.Column>
 
-          <div className="titleItem">
-            <Button
-              size="mini"
-              icon="github"
-              primary
-              href={githubLink}
-              target="blank"
-            />
-          </div>
-        </div>
+          <Grid.Column width={5}>
+            <div className="titleArea">
+              <div style={{ marginRight: "1vh" }}>
+                <h2 color="blue">{title}</h2>
+              </div>
 
-        <Image
-          src={image}
-          size="huge"
-          alt="projectZeroImage"
-          style={{ marginLeft: "3vh" }}
-        />
+              <div>
+                <Button
+                  size="mini"
+                  icon="world"
+                  primary
+                  href={herokuLink}
+                  target="blank"
+                />
+              </div>
 
-        <ul>
-          {/* <li>
-            Web-based stock app with up-to-date pricing information reflecting
-            performance of stocks.
-          </li>
-          <li>
-            Ensure secure user authentication, a registered user can buy any
-            share of the stock based on balance.
-          </li>
-          <li>Utilized the IEX API to ensure real-time stock information.</li>
-          <li>
-            Technology used:{" "}
-            <b>JavaScript, React, Node.js, IEX API, PostgreSQL</b>
-          </li> */}
-          <p>{info}</p>
-        </ul>
-        <Divider section />
-      </div>
+              <div>
+                <Button
+                  size="mini"
+                  icon="github"
+                  primary
+                  href={githubLink}
+                  target="blank"
+                />
+              </div>
+            </div>
+
+            <ul>{lists}</ul>
+          </Grid.Column>
+        </Grid>
+        <Divider />
+      </>
     );
   }
 }
